@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
+
+/**
+ * UserProfile is a dynamic page component that uses URL parameters to fetch 
+ * and display a specific user's detailed information. It implements 
+ * targeted data fetching, manages the component lifecycle (loading/error), 
+ * and provides a structured view for nested object data like addresses 
+ * and company slogans.
+ */
+
 const UserProfile = () => {
   const { id } = useParams();
   const [user, setUser] = useState(null);

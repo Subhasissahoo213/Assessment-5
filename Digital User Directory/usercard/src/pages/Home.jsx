@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import UserCard from '../components/UserCard';
 
+
+/**
+ * Home serves as a container component that manages the asynchronous data lifecycle
+ * of the application. It handles API communication, tracks loading and error states 
+ * via React hooks, and dynamically renders a grid of UserCard components once 
+ * data is successfully retrieved, ensuring a reactive and resilient UI.
+ */
+
 const Home = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);

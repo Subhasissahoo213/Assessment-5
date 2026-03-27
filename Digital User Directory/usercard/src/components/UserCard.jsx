@@ -1,6 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+/**
+ * UserCard is a presentational component used to display a summary of user information 
+ * in a consistent layout. It promotes code reusability by dynamically rendering props 
+ * and utilizes React Router's Link for efficient, client-side navigation to detailed 
+ * user profiles without triggering a full page reload.
+ */
+
 const UserCard = ({ user }) => {
   return (
     <div className="card">
